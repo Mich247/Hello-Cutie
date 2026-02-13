@@ -1,0 +1,117 @@
+.Header1{
+    background-color: #F8C8DC;
+    height: 100vh;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+.header2{
+    padding-left: 20px;
+    background-color: #FFF5E1;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 20px;
+    padding-top: 80px;
+    justify-self: center;
+    padding-bottom: 40px;
+    margin-top: 220px;
+    margin-right: 900px;
+    float: inline-end;
+}
+.head3{
+    text-align: center;
+    margin-top: -50px;
+}
+.label{
+    margin-top: 40px;
+}
+.head3, h2{
+    font-size: 3vmin;
+    font-style: oblique;
+}
+p{
+    font-size: 1.5vmin;
+    margin-top: -15px;
+}
+.label-1{
+    margin-top: 60px;
+    justify-self:center ;
+}
+input{
+    height: 55px;
+    width: 40vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 1PX solid black;
+}
+.label-1, label{
+    font-size: 2vmin;
+    font-weight: bold;
+    
+}
+#P-Made{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2vmin;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.input2{
+    margin-top: 15px;
+    font-size: 30px;
+}
+.submit{
+    height: 55px;
+    width: 40vh;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    font-size: 2vmin;
+    font-weight: bold;
+    background-color: #F8C8DC;
+}
+input::placeholder{
+    padding: 15px;
+    font-size: 2vmin;
+}
+.submit:hover{
+    cursor: pointer;
+}
+
+.Val-Head{
+    background: linear-gradient(135deg, #FF9a9e, #Fad0c4);
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    margin-top: -22px;
+    margin-left: -10px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #FFF5E1;
+    font-size: 40px;
+    cursor: pointer;
+}
+.submit, a{
+    text-decoration: none;
+    color: black;
+}

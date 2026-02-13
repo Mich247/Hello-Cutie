@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Valentine</title>
+    <link rel="stylesheet" href="vibet.css">
+</head>
+<body>
+    <div class="Val-1">
+        <div class="container">
+            <div class="OpenImage1">
+                <img src="Teddy01.png" alt="" height="250" width="250">
+            </div>
+
+            <h2>Sunshine 🌸, will you be my Valentine?</h2>
+            <div class="buttons" id="butt">
+                <button id="yesBtn" onclick="openImage()">YES</button>
+                <button id="noBtn">No</button>
+            </div>
+
+            <div id="ImageYhh" class="yahimg">
+             <img src="yahh.gif" alt="" class="img-yahh" height="400" width="400">
+            </div>
+            <p id="p-T">"N0" seems a bit shy 😈</p>
+        </div>
+    </div>
+
+    <script>
+        function openImage() {
+            document.getElementById("ImageYhh").
+            style.display = "flex";
+        }
+    </script>
+
+    <script>
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
+const area = document.getElementById("butt");
+
+let yesScale = 1;
+
+// Function to move NO randomly inside container
+function moveNoButton() {
+
+    const maxX = area.clientWidth - noBtn.offsetWidth;
+    const maxY = area.clientHeight - noBtn.offsetHeight;
+
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+
+    // Grow YES button
+    yesScale += 0.1;
+    yesBtn.style.transform = "scale(" + yesScale + ")";
+}
+
+// When mouse gets close
+noBtn.addEventListener("mouseenter", moveNoButton);
+
+// Extra protection (if somehow clicked)
+noBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    moveNoButton();
+});
+</script>
+
+</body>
+</html>

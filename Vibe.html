@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine</title>
+    <link rel="stylesheet" href="vibetest.css">
+    <link rel="stylesheet" href="vibet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+</head>
+<body>
+    <div class="Header1">
+        <div class="header2">
+            <div class="head3">
+                <h2>💌</h2>
+                <h2> Hey Beautiful!</h2>
+                <p>This is a secret place... only for someone special 💝✨</p>
+            </div>
+            <form onsubmit="return validateLogin(event)" class="label-1">
+                    <label for="Who are you?">Who are you? 👀</label>
+                    <br>
+                    <input type="text" class="input2" name="name" id="name" placeholder="Enter your name..." required>
+                    <br>
+
+                    <br>
+                    <label for="Secret password 🔐">Secret password 🔐</label>
+                    <br>
+                    <input type="password" class="input2" name="password" id="password" placeholder="What's the magic word..." required>
+                    
+                    <br>
+                    <button type="submit" class="submit">Let Me In!💖</button>
+                    <P id="P-Made">Made with all my love </P>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        function validateLogin() {
+            const correctPassword = "OpenMyHeart";
+
+            const password = document.getElementById("password").value;
+
+            if (password === correctPassword) {
+                alert("Login Successful !");
+                return true;
+            } else {
+                document.getElementById("password").innerText = "Wrong password !";
+                return false;
+            }
+        }
+
+         function validateLogin(event) {
+            event.preventDefault();
+
+            const password = document.getElementById("password").value;
+
+            if (password === "OpenMyHeart") {
+                window.location.href = "Vibetest.html";
+            } else {
+                alert ("Wrong Password 💗")
+            }
+        }
+    </script>
+</body>
+</html>

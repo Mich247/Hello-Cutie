@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my VALENTINE</title>
+    <link rel="stylesheet" href="Vibe.css">
+</head>
+<body>
+    <button onclick="openImage()">Open Image</button>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times; Yahh!</span>
+        <img src="yahh.gif" alt="" class="modal-content">
+    </div>
+
+    <script>
+        function openImage() {
+            document.getElementById("imageModal").
+            style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("imageModal")
+            style.display = "none";
+        }
+    </script>
+</body>
+</html>

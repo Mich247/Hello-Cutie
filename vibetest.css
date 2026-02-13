@@ -1,0 +1,69 @@
+.Val-1{
+    background: #ffd6ec;
+    min-height: 100vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+.container{
+    justify-self: center;
+    padding-top: 200px;
+    background-color: #fff;
+    height:50vh ;
+    width: 100vh;
+    float: inline-end;
+    margin-top: 150px;
+    margin-right: 650px;
+    position: relative;
+}
+.buttons{
+    padding-left: 40px;
+    position: absolute;
+}
+button{
+    margin-left: 330px;
+    font-size: larger;
+    border-radius: 20px;
+    margin-top: 80px;
+    transition: 0.2s;
+    
+}
+#yesBtn{
+    background-color: #ff2e63;
+    color: #fff;
+    padding: 25px 45px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-right: -180px;
+}
+#noBtn{
+    padding: 15px 35px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.OpenImage1{
+    margin-left: 400px;
+    margin-top: -140px;
+}
+h2{
+    text-align: center;
+    font-size: 5vmin;
+    margin-top: 60px;
+}
+.yahimg{
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#p-T{
+    text-align: center;
+    margin-top: 270px;
+    margin-right: 30px;
+    font-size: 20px;
+}
